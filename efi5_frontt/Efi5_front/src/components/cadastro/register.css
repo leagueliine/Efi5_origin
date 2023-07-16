@@ -1,5 +1,6 @@
 .login-container {
     background-color: #222;
+    border-radius: 90px;
     width: 500px;
     color: #fff;
     height: 80vh;
@@ -8,15 +9,22 @@
     justify-content: center;
     align-items: center;
   }
+
   
   .login-heading {
     font-size: 2rem;
+    color: cadetblue;
     margin-bottom: 1rem;
   }
   
   .login-form {
     display: flex;
     flex-direction: column;
+  }
+  .div-link{
+    margin-top:35px;
+    transition: 0.5s;
+
   }
   
   label {
@@ -38,8 +46,9 @@
     color: #000;
     border: none;
     cursor: pointer;
+    transition: 0.5s ease;
   }
   button:hover{
-    background-color: aqua;
-    transition: 1.5s;
+    background-color: cadetblue;
+
   }
