@@ -7,9 +7,6 @@ const router = Router()
 router.post('/login', async (req, res) => {
  
     const { nome, senha } = req.body
-    res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
-  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
     try{
     const user = await User.findOne({where: {
         nome: nome
